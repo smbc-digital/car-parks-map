@@ -1,19 +1,21 @@
 const carparksPopup = (feature, layer) => {
   
-  const content = `<div class="item">
-  <i class="fa fa-product-hunt" aria-hidden="true"></i>
-  <p class="title">Car Parks</p>
-  <p></p>
-  <p class="info">Name: ${feature.properties.name}</p>
-  <p class="info">Postcode: ${feature.properties.post_code}</p>
-  <p class="info">RingGo Zone: ${feature.properties.ringgo_zone}</p>
-  <p class="info">Spaces: ${feature.properties.total_capacity}</p>
-  <p class="info">Disabled Spaces: ${feature.properties.disabled_spaces}</p>
-  <p class="info">Parent and Child Spaces: ${feature.properties.parent_child_spaces}</p>
-  <p class="info">Electric Vehicle Spaces: ${feature.properties.electric_vehicle_spaces}</p>
-  <p class="info">Height Restriction: ${feature.properties.height_restriction_m}</p>
-  <p class="info">Park Mark: ${feature.properties.park_mark}</p>
-  </div>`
+  const content = `<div class="smbc-map__item">
+  <div class="smbc-map__item__header__block">
+   <i class="fa fa-product-hunt  smbc-map__item__header__block__icon" aria-hidden="true"></i>
+   <p class="smbc-map__item__header__block__title">Car Parks</p>
+  </div>
+  <div class="smbc-map__item__body">
+    <p>Name: ${feature.properties.name}</p>
+    <p>Postcode: ${feature.properties.post_code}</p>
+    <p>RingGo Zone: ${feature.properties.ringgo_zone}</p>
+    <p>Spaces: ${feature.properties.total_capacity}</p>
+    <p>Disabled Spaces: ${feature.properties.disabled_spaces}</p>
+    <p>Parent and Child Spaces: ${feature.properties.parent_child_spaces}</p>
+    <p>Electric Vehicle Spaces: ${feature.properties.electric_vehicle_spaces}</p>
+    <p>Height Restriction: ${feature.properties.height_restriction_m}</p>
+    <p>Park Mark: ${feature.properties.park_mark}</p>
+  </div></div>`
  
   layer.bindPopup(content)
  }
