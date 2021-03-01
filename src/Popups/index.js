@@ -11,7 +11,6 @@ const carparksPopup = (feature, layer) => {
   <p class="info">Electric Vehicle Spaces: ${feature.properties.electric_vehicle_spaces}</p>
   <p class="info">Height Restriction: ${feature.properties.height_restriction_m}</p>
   <p class="info">Park Mark: ${feature.properties.park_mark}</p>
-  
   </div>`
  
   layer.bindPopup(content)
