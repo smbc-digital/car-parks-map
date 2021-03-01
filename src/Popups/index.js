@@ -1,6 +1,8 @@
 const carparksPopup = (feature, layer) => {
   
-  const content = `<div class="item"><i class="fa fa-product-hunt" aria-hidden="true"></i><p class="title">Car Parks</p>
+  const content = `<div class="item">
+  <i class="fa fa-product-hunt" aria-hidden="true"></i>
+  <p class="title">Car Parks</p>
   <p></p>
   <p class="info">Name: ${feature.properties.name}</p>
   <p class="info">Postcode: ${feature.properties.post_code}</p>
